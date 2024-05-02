@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.donation-container {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.needed {
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.days-left, .donor-count {
+    color: #333;
+    padding: 5px 10px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #eee;
+}
+
+.donation-amount button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.green-button {
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.link-button {
+    background: none;
+    border: none;
+    color: #069;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.save-share {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.save-share .link-button {
+    margin-right: 10px;
+}
