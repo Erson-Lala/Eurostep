@@ -1,5 +1,26 @@
 body {
     font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.needed {
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    width: 340px;
+    margin-bottom: 20px;
 }
 
 .donation-container {
@@ -8,13 +29,14 @@ body {
     background-color: #fff;
     border: 1px solid #ccc;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative;
 }
 
-.needed {
-    background-color: #444;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
+.progress-bar {
+    height: 20px;
+    background-color: #FFA500;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 .days-left, .donor-count {
@@ -24,40 +46,44 @@ body {
     border-bottom: 1px solid #eee;
 }
 
-.donation-amount button {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 2px solid #ccc;
-    background-color: #f9f9f9;
-    cursor: pointer;
+.donation-amount {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
 }
 
-.button-container {
-    text-align: center;
+.donation-amount button, .donation-amount .green-button {
+    width: 49%;
+    padding: 10px;
+    cursor: pointer;
 }
 
 .green-button {
     color: #fff;
     background-color: #4CAF50;
     border: none;
-    padding: 10px 20px;
-    cursor: pointer;
 }
 
-.link-button {
-    background: none;
-    border: none;
+.why-give {
+    font-style: italic;
     color: #069;
-    padding: 5px;
-    cursor: pointer;
+    padding: 10px 0;
+    text-align: center;
 }
 
 .save-share {
     text-align: center;
-    padding-top: 10px;
+    margin-top: 10px;
 }
 
-.save-share .link-button {
+.save-share .bordered-button {
+    border: 1px solid #ccc;
+    padding: 5px 10px;
     margin-right: 10px;
+    background: none;
+    cursor: pointer;
+}
+
+.bordered-button:last-child {
+    margin-right: 0;
 }
